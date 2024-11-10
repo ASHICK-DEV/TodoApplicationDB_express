@@ -1,0 +1,27 @@
+###
+GET http://localhost:3000/todos/?search_q=VolleyBall
+
+###
+GET http://localhost:3000/todos/13/
+
+###
+POST http://localhost:3000/todos/ 
+Content-Type: application/json 
+
+{
+  "id": 4,
+  "todo": "Play VolleyBall",
+  "priority": "MEDIUM",
+  "status": "DONE"
+}
+
+###
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json 
+
+{
+    "todo": "VolleyBall"
+}
+
+###
+DELETE http://localhost:3000/todos/12/
